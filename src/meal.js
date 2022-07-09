@@ -23,11 +23,24 @@ function formatPrice(price) {
   return `$${price}`;
 }
 
+function decreasePrice(price) {
+  var dec = (price/100)*10;
+  return price - dec;
+}
+
+function createRecipe(title, ingredients, menuItemType) {
+return {
+  title : title,
+  ingredients : ingredients,
+  type : menuItemType
+};
+}
+
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
   formatPrice,
-  // decreasePrice,
-  // createRecipe
+  decreasePrice,
+  createRecipe
 }
