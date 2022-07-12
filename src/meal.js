@@ -1,3 +1,12 @@
+module.exports = {
+  nameMenuItem,
+  createMenuItem,
+  addIngredients,
+  formatPrice,
+  decreasePrice,
+  createRecipe
+}
+
 function nameMenuItem(name) {
   return `Delicious ${name}`;
 }
@@ -34,13 +43,4 @@ return {
   ingredients : ingredients,
   type : menuItemType
 };
-}
-
-module.exports = {
-  nameMenuItem,
-  createMenuItem,
-  addIngredients,
-  formatPrice,
-  decreasePrice,
-  createRecipe
 }
